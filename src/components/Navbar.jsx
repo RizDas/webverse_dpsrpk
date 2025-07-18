@@ -17,7 +17,7 @@ function Navbar() {
       </div>
 
       <div className="navbar-links nav-links" id="nav-links">
-        <Link to="/about-us/">About Us</Link>
+        <Link to="/about-us/">About Us </Link>
 
         <div className="dropdown">
           <Link to="/products">Our Tours &nbsp;</Link>

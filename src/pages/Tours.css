@@ -122,7 +122,8 @@
 }
 
 .horizontal-tours {
-  max-width: 70%;
+  max-width: calc(100% - 40px); /* 20px margin on each side */
+  width: 100%;
   margin: 4rem auto;
 }
 
@@ -134,17 +135,18 @@
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   position: relative;
-  width: 70%;
+  width: 80%;
 }
 
 .horizontal-card.right-aligned {
   flex-direction: row-reverse;
-  margin-left: auto;
+  margin-left: calc(100% - 80%); /* Pushes card to the right edge */
+  margin-right: 20px;
 }
 
-.horizontal-card.right-aligned {
-  flex-direction: row-reverse;
-  margin-left: auto;
+.horizontal-card.left-aligned {
+  margin-left: 20px;
+  margin-right: auto;
 }
 
 .horizontal-card.left-aligned {
