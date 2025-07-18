@@ -6,7 +6,7 @@ function Navbar() {
     <nav id="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src="../src/assets/logo-full.png" alt="Auraluxe" id="logo" />
+          <img src="../media/starscope-logo.png" alt="Auraluxe" id="logo" />
         </Link>
       </div>
 
@@ -20,7 +20,7 @@ function Navbar() {
         <Link to="/about-us/">About Us</Link>
 
         <div className="dropdown">
-          <Link to="/products">Products &nbsp;</Link>
+          <Link to="/products">Our Tours &nbsp;</Link>
           <div className="dropdown-content">
             <a href="/product.html?id=1">1</a>
             <a href="/product.html?id=2">2</a>
