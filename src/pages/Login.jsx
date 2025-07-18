@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 import "./Auth.css";
+import { signup, login, fetchProfile, getOrders, submitReview } from './api';
+
+async function handleLogin() {
+  try {
+    await login('soumilidey', 'password');
+    const profile = await fetchProfile();
+    console.log(profile);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 const Login = () => {
   const [formData, setFormData] = useState({
