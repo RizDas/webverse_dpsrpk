@@ -34,7 +34,7 @@ function Footer() {
                   }}
                   alt="instagram"
                 />
-                <span style={{ marginLeft: "6px" }}>@Auraluxe</span>
+                <span style={{ marginLeft: "6px" }}>@starscope</span>
               </a>
               <a href="https://www.linkedin.com/in/">
                 <img
@@ -46,7 +46,7 @@ function Footer() {
                   }}
                   alt="linkedin"
                 />
-                <span style={{ marginLeft: "6px" }}>Auraluxe</span>
+                <span style={{ marginLeft: "6px" }}>Starscope</span>
               </a>
               <a href="https://www.facebook.com/">
                 <img
@@ -58,7 +58,7 @@ function Footer() {
                   }}
                   alt="facebook"
                 />
-                <span style={{ marginLeft: "6px" }}>Auraluxe</span>
+                <span style={{ marginLeft: "6px" }}>StarScope</span>
               </a>
             </div>
           </div>
@@ -122,7 +122,7 @@ function Footer() {
           <p className="copyright">2025 Auraluxe. All Rights Reserved.</p>
         </div>
 
-        <p className="email">support@auraluxe.com</p>
+        <p className="email">support@starscope.com</p>
       </div>
       <div id="btt" onClick={toTop}>
         Back to top
