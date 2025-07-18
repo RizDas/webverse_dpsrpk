@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Auth.css";
-import { login } from '../api';
+import { login , fetchprofile} from '../api';
 
 async function handleLogin() {
   try {
