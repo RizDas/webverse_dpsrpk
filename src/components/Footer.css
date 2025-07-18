@@ -3,9 +3,9 @@
   max-width: 100%;
   background: linear-gradient(
     180deg,
-    rgb(9, 3, 72) 0%,
-    rgb(16, 26, 165) 50%,
-    rgb(55, 104, 179) 100%
+    #111828 0%,
+    #202938 50%,
+    rgb(9, 3, 72) 100%
   ) !important;
   color: white;
   overflow-y: hidden;
@@ -237,7 +237,7 @@
 
 .contact-banner {
   color: white;
-  overflow-x:hidden;
+  overflow-x: hidden;
   text-align: left;
   width: 100%;
   position: relative;
@@ -245,7 +245,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.contact-coloumn{
+.contact-coloumn {
   padding-left: 5px;
 }
 .top-row {
@@ -275,7 +275,7 @@
 }
 
 .email {
-  font-size: 8vw; /* Stretches fully across the screen */
+  font-size: 7.55vw; /* Stretches fully across the screen */
   font-weight: 700;
   color: #d1d5db;
   margin: 10px 0 0 0;
