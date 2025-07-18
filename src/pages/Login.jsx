@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Auth.css";
-import { signup, login, fetchProfile, getOrders, submitReview } from './api';
+import { login } from '../api';
 
 async function handleLogin() {
   try {
