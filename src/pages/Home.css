@@ -262,7 +262,7 @@ body {
 /**********SECTION-3**********/
 section.vid {
   height: 5000px;
-  transform: translateY(-90px);
+  transform: translateY(-180px);
 }
 
 section.vid .holder {
