@@ -8,7 +8,6 @@ const Tours = () => {
     {
       id: 1,
       title: "Beginner's Night Sky Adventure",
-      image: "/images/tours/beginner-tour.jpg",
       description:
         "Perfect for first-time stargazers. Learn basic constellations and use beginner-friendly telescopes.",
       duration: "2 hours",
@@ -20,7 +19,6 @@ const Tours = () => {
     {
       id: 2,
       title: "Deep Space Explorer",
-      image: "/images/tours/deep-space.jpg",
       description:
         "Advanced telescope viewing of nebulae, galaxies, and star clusters with expert astronomers.",
       duration: "3 hours",
