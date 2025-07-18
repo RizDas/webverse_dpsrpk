@@ -1,8 +1,7 @@
-# 🌌 StarScope – Your Window to the Universe
+# StarScope – DISCOVER THE UNIVERSE
+ONE STAR AT A TIME
 
 StarScope is a premium stargazing and astrophotography web experience designed to bring the beauty of the cosmos to everyone. Built with a parallax scroll effect and scroll-synced video elements, this site offers an immersive journey through our services and the night sky.
-
-## 🌠 Live at: [YourDeploymentURL.com](https://yourdeploymenturl.com)
 
 ---
 
