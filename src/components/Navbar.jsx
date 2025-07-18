@@ -17,12 +17,8 @@ function Navbar() {
       </div>
 
       <div className="navbar-links nav-links" id="nav-links">
-        \<Link to="/tours">Tours</Link>
-        <Link to="/our-vision/">Our Vision</Link>
-        <Link to="/contact/">Contact Us</Link>
-        <Link to="/register" className="btn btn-primary">
-          Sign Up
-        </Link>
+        <Link to="/about">About</Link>
+        <Link to="/tours">Tours</Link>
       </div>
     </nav>
   );

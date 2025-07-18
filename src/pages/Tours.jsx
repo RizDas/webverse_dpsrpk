@@ -117,7 +117,6 @@ const Tours = () => {
               whileHover={{ scale: 1.03 }}
               className="tour-card"
             >
-              <img src={tour.image} alt={tour.title} className="tour-image" />
               <div className="tour-content">
                 <h2 className="tour-title">{tour.title}</h2>
                 <p className="tour-description">{tour.description}</p>
@@ -159,7 +158,6 @@ const Tours = () => {
               {tour.bestSeller && (
                 <div className="best-seller-tag">Best Seller</div>
               )}
-              <img src={tour.image} alt={tour.title} className="tour-image" />
               <div className="tour-content">
                 <h2 className="tour-title">{tour.title}</h2>
                 <p className="tour-description">{tour.description}</p>

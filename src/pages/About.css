@@ -1,0 +1,149 @@
+.about-container {
+  min-height: 100vh;
+  background-color: #111827;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.mission-statement {
+  font-size: 1.5rem;
+  color: #d1d5db;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-story {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.our-story h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.our-story p {
+  color: #d1d5db;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-section {
+  margin-bottom: 4rem;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.team-member {
+  background-color: #1f2937;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member .role {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.team-member .description {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.values-section {
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.value-item {
+  background-color: #1f2937;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-item h3 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.value-item p {
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .mission-statement {
+    font-size: 1.25rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
