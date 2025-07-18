@@ -93,7 +93,7 @@ const Home = () => {
       <section className="vid">
         <div className="holder">
           <video
-            src="/media/lumino.mp4"
+            src="/media/video.mp4"
             muted
             playsInline
             preload="auto"
