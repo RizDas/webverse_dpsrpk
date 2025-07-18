@@ -54,7 +54,7 @@ const Home = () => {
         <div className="bg-video">
           <spline-viewer
             className="spline"
-            url="https://prod.spline.design/6SMhyKFA1PgFr9vC/scene.splinecode"
+            url="https://prod.spline.design/12AEZqHRDwddklwu/scene.splinecode"
           ></spline-viewer>
           <div className="video-overlay"></div>
         </div>
