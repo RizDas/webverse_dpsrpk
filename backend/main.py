@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # import routers
-from app.routes import users
+from app.auth import users  
 from app.routes.users import profile, subscription, reviews
 
 app = FastAPI(title="StarScope Backend")
