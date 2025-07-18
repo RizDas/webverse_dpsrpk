@@ -1,12 +1,47 @@
-# React + Vite
+# 🌌 StarScope – Your Window to the Universe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StarScope is a premium stargazing and astrophotography web experience designed to bring the beauty of the cosmos to everyone. Built with a parallax scroll effect and scroll-synced video elements, this site offers an immersive journey through our services and the night sky.
 
-Currently, two official plugins are available:
+## 🌠 Live at: [YourDeploymentURL.com](https://yourdeploymenturl.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📷 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔭 Stargazing Sessions
+- Guided telescope-based tours with experts
+- Real-time constellation and planet tracking
+- Group and solo bookings available
+
+### 📸 Astrophotography Experience
+- Capture celestial moments with professional gear
+- Personalized photo sessions
+- Receive edited high-quality images
+
+### 🌕 Live Celestial Events
+- Stream eclipses, meteor showers, and more
+- Global access with expert commentary
+- Replay options available for members
+
+### 📚 Learn the Sky
+- Astronomy workshops for all age groups
+- Telescope training and star map sessions
+- Great for schools, clubs, and curious minds
+
+### 💎 StarScope Membership Perks
+- Early access to events
+- Exclusive space wallpapers
+- Astro reports and discounts
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Framer Motion / GSAP
+- **Styling:** CSS3, Responsive Layouts, Custom Animations
+- **Deployment:** Vercel / Netlify / GitHub Pages
+
+---
+
+## 📂 Project Structure
+
