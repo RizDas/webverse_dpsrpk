@@ -1,45 +1,84 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "/src/pages/Home.css";
+
 
 // 💡 Scroll-synced video hook (outside component)
 const useScrollSyncedVideo = () => {
   useEffect(() => {
-    if (window.matchMedia("(min-width: 769px)").matches) {
-      const section = document.querySelector("section.vid");
-      const vid = section?.querySelector("video");
+    if (!window.matchMedia("(min-width: 769px)").matches) return;
 
-      if (section && vid) {
-        vid.pause(); // Pause initially
+    const section = document.querySelector("section.vid");
+    const video = section?.querySelector("video");
 
-        const scroll = () => {
+    if (!section || !video) return;
+
+    video.pause(); // Pause initially
+
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
           const distance = window.scrollY - section.offsetTop;
           const total = section.clientHeight - window.innerHeight;
           let percentage = distance / total;
           percentage = Math.max(0, Math.min(1, percentage));
 
-          if (vid.duration > 0) {
-            vid.currentTime = vid.duration * percentage;
+          if (video.duration > 0) {
+            video.currentTime = video.duration * percentage;
           }
-        };
 
-        vid.addEventListener("loadedmetadata", scroll);
-        window.addEventListener("scroll", scroll);
-        scroll(); // Initial run
+          ticking = false;
+        });
 
-        return () => {
-          vid.removeEventListener("loadedmetadata", scroll);
-          window.removeEventListener("scroll", scroll);
-        };
+        ticking = true;
       }
-    }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    video.addEventListener("loadedmetadata", handleScroll);
+    handleScroll(); // Initial run
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      video.removeEventListener("loadedmetadata", handleScroll);
+    };
   }, []);
 };
 
 const Home = () => {
+    const [showSpline, setShowSpline] = useState(false);
+  const splineRef = useRef(null);
   // ⏫ Call the hook at the top level
   useScrollSyncedVideo();
 
   // 👇 Spline loader on mount
+useEffect(() => {
+  const section = splineRef.current;
+  if (!section) return;
+
+  let timeoutId;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        timeoutId = setTimeout(() => setShowSpline(true), 150); // small delay
+      } else {
+        setShowSpline(false);
+        clearTimeout(timeoutId);
+      }
+    },
+    {
+      threshold: 0.4,
+    }
+  );
+
+  observer.observe(section);
+
+  return () => {
+    observer.disconnect();
+    clearTimeout(timeoutId);
+  };
+}, []);
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "module";
@@ -50,14 +89,17 @@ const Home = () => {
 
   return (
     <div id="main">
-      <section className="section-1">
-        <div className="bg-video">
-          <spline-viewer
-            className="spline"
-            url="https://prod.spline.design/12AEZqHRDwddklwu/scene.splinecode"
-          ></spline-viewer>
-          <div className="video-overlay"></div>
-        </div>
+<section className="section-1" ref={splineRef}>
+  <div className="bg-video">
+    {showSpline && (
+      <spline-viewer
+        className="spline"
+        url="https://prod.spline.design/12AEZqHRDwddklwu/scene.splinecode"
+      ></spline-viewer>
+    )}
+    <div className="video-overlay"></div>
+  </div>
+
 
         <div className="section-content">
           <h2>
